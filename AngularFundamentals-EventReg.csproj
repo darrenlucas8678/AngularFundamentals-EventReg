@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BBF1F782-D7DE-42F3-AD1F-9A645381C86E}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AngularFundamentals_EventReg</RootNamespace>
+    <AssemblyName>AngularFundamentals-EventReg</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="README.md" />
+    <None Include="server.bat" />
+    <None Include="server.sh" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include="app\css\app.css" />
+    <Content Include="app\css\bootstrap.min.css" />
+    <Content Include="app\favicon.ico" />
+    <Content Include="app\img\glyphicons-halflings-white.png" />
+    <Content Include="app\img\glyphicons-halflings.png" />
+    <Content Include="app\js\app.js" />
+    <Content Include="app\js\controllers\EventListController.js" />
+    <Content Include="app\js\directives.js" />
+    <Content Include="app\js\filters.js" />
+    <Content Include="app\js\services\authentication.js" />
+    <Content Include="app\js\services\eventData.js" />
+    <Content Include="app\js\services\eventResource.js" />
+    <Content Include="app\lib\angular\angular-resource.min.js" />
+    <Content Include="app\lib\angular\angular-route.min.js" />
+    <Content Include="app\lib\angular\angular.js" />
+    <Content Include="app\lib\bootstrap.js" />
+    <Content Include="app\lib\bootstrap.min.js" />
+    <Content Include="app\lib\jquery.min.js" />
+    <Content Include="app\lib\underscore-1.4.4.min.js" />
+    <Content Include="scripts\web-server.js" />
+    <Content Include="test\e2e\runner.html" />
+    <Content Include="test\e2e\scenarios.js" />
+    <Content Include="test\karma.conf.js" />
+    <Content Include="test\lib\angular-mocks.js" />
+    <Content Include="test\lib\sinon-1.10.2.js" />
+    <Content Include="test\protractor-conf.js" />
+    <Content Include="test\unit\EventListControllerSpec.js" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
