@@ -20,11 +20,14 @@ select, textarea {
 }
 
 .votingWidget {
-  height: 64px;
-  padding: 7px;
+  padding: 5px;
 }
 
 .votingButton {
   padding-left:6px;
   cursor:pointer;
+}
+
+[ng\:cloak], [ng-cloak], .ng-cloak {
+    display: none !important;
 }

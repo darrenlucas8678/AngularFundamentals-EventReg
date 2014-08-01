@@ -1,0 +1,11 @@
+﻿<div class="span0 well votingWidget">
+    <div class="votingButton">
+        <i class="icon-chevron-up icon-white" ng-click="upVoteSession(session)"></i>
+    </div>
+    <div class="badge badge-inverse">
+        <div>{{session.upVoteCount}}</div>
+    </div>
+    <div class="votingButton">
+        <i class="icon-chevron-down" ng-class="session.downEnabled" ng-click="downVoteSession(session)"></i>
+    </div>
+</div>
